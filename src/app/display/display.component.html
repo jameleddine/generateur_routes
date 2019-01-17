@@ -1,0 +1,9 @@
+<p>
+  display works!
+</p>
+<router-outlet></router-outlet>
+<ul>
+  <li *ngFor="let route of routes">
+    <a [routerLink]="['/page',route.path]">{{route.text}}</a> 
+  </li>
+</ul>

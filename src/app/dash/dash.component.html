@@ -1,0 +1,19 @@
+<button [routerLink]="['display']">Display routes</button>
+
+<div class="row" *ngFor="let item of path">
+  <div class="col-md-6">
+    <div class="form-group">
+      <label>Path</label>
+      <input class="form-control" [(ngModel)]="item.path">
+    </div>    
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label>Text</label>
+      <input class="form-control"  [(ngModel)]="item.text">
+    </div> 
+  </div>
+</div>
+<button class="btn btn-success" (click)="ajout()">Add+</button>
+
+<button class="btn btn-info" (click)="save()">Save File</button>
